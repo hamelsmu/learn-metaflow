@@ -1,0 +1,3 @@
+[MFLOG|0|2021-07-23T17:52:58.024037Z|runtime|df5d2c98-51da-43cc-9091-1d35c6716eea]total-time for fib: 0.11961483955383301
+[MFLOG|0|2021-07-23T17:52:58.050086Z|runtime|66de48a9-1ca6-4738-82e3-9dd14405e8f7]The creature is dog
+[MFLOG|0|2021-07-23T17:52:58.050270Z|runtime|bab795d1-bc5e-455d-8662-e57172bcef8a]The final count is 2

@@ -1,0 +1,4 @@
+[MFLOG|0|2021-07-19T03:57:35.897880Z|runtime|4d6aeaff-8d54-45b7-aba0-2dccda14f3a9]first,second,third
+[MFLOG|0|2021-07-19T03:57:35.953868Z|runtime|bb8c7c0c-4165-4f3a-8a87-b163c791edaa]a,b,c
+[MFLOG|0|2021-07-19T03:57:35.954143Z|runtime|27b91aca-2bb4-4565-9cfa-300863d3434a]24
+[MFLOG|0|2021-07-19T03:57:35.954244Z|runtime|b6358c44-e7e8-4f68-aadb-f9946d26edba]<class 'str'>

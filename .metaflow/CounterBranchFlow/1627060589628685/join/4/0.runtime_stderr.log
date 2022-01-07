@@ -1,0 +1,30 @@
+[MFLOG|0|2021-07-23T17:16:32.080579Z|runtime|ca3171d0-0bfa-408a-bf6f-7621001f4eb6]<flow CounterBranchFlow step join> failed:
+[MFLOG|0|2021-07-23T17:16:32.085617Z|runtime|60dc2c24-04ec-402d-ab88-530f102063ac]    Internal error
+[MFLOG|0|2021-07-23T17:16:32.086530Z|runtime|588837df-4086-4926-a127-5a40d6d6a9e1]Traceback (most recent call last):
+[MFLOG|0|2021-07-23T17:16:32.086660Z|runtime|d9dd6e0e-fe52-4245-8de9-59e919310948]  File "/Users/hamelsmu/anaconda3/lib/python3.8/site-packages/metaflow/cli.py", line 1005, in main
+[MFLOG|0|2021-07-23T17:16:32.086762Z|runtime|980ddb7e-9526-4631-a91f-de9c5078b1bf]    start(auto_envvar_prefix='METAFLOW', obj=state)
+[MFLOG|0|2021-07-23T17:16:32.086852Z|runtime|69135a0d-7d6e-4c6f-af58-b2522c94741c]  File "/Users/hamelsmu/anaconda3/lib/python3.8/site-packages/click/core.py", line 829, in __call__
+[MFLOG|0|2021-07-23T17:16:32.086943Z|runtime|70b74ca4-e9ae-4362-beb0-eb2cb6f3ccb4]    return self.main(args, kwargs)
+[MFLOG|0|2021-07-23T17:16:32.129928Z|runtime|e4e196d9-bde2-4b42-85e9-3601fd9610a4]  File "/Users/hamelsmu/anaconda3/lib/python3.8/site-packages/click/core.py", line 782, in main
+[MFLOG|0|2021-07-23T17:16:32.130187Z|runtime|656daa47-d15e-4817-9e0f-163ec4ee6b96]    rv = self.invoke(ctx)
+[MFLOG|0|2021-07-23T17:16:32.130276Z|runtime|3822ad56-ce47-49b3-ba85-64507cd27c3b]  File "/Users/hamelsmu/anaconda3/lib/python3.8/site-packages/click/core.py", line 1259, in invoke
+[MFLOG|0|2021-07-23T17:16:32.130358Z|runtime|34d8fc40-5fed-4301-8024-04fb154ea259]    return _process_result(sub_ctx.command.invoke(sub_ctx))
+[MFLOG|0|2021-07-23T17:16:32.130433Z|runtime|f7c4bac7-1550-4067-a939-e1fa2847856c]  File "/Users/hamelsmu/anaconda3/lib/python3.8/site-packages/click/core.py", line 1066, in invoke
+[MFLOG|0|2021-07-23T17:16:32.130504Z|runtime|77568d66-8a28-47dd-886e-d4ee02312fa8]    return ctx.invoke(self.callback, ctx.params)
+[MFLOG|0|2021-07-23T17:16:32.130573Z|runtime|06e19623-b6a7-4a95-87cd-f27facd3db4c]  File "/Users/hamelsmu/anaconda3/lib/python3.8/site-packages/click/core.py", line 610, in invoke
+[MFLOG|0|2021-07-23T17:16:32.130643Z|runtime|471e13d3-97aa-4c6c-a982-b069fe480b89]    return callback(args, kwargs)
+[MFLOG|0|2021-07-23T17:16:32.130713Z|runtime|236a45a8-5910-43a8-9b9c-2d65302d0d68]  File "/Users/hamelsmu/anaconda3/lib/python3.8/site-packages/click/decorators.py", line 21, in new_func
+[MFLOG|0|2021-07-23T17:16:32.130785Z|runtime|6f52487b-d35a-45ea-9bc7-f4766eb4aefd]    return f(get_current_context(), args, kwargs)
+[MFLOG|0|2021-07-23T17:16:32.130855Z|runtime|5bc14828-b360-49b7-974e-a4255d79b93a]  File "/Users/hamelsmu/anaconda3/lib/python3.8/site-packages/metaflow/cli.py", line 514, in step
+[MFLOG|0|2021-07-23T17:16:32.130924Z|runtime|44df4a7c-e28e-4404-85be-5a0170fb126f]    task.run_step(step_name,
+[MFLOG|0|2021-07-23T17:16:32.130996Z|runtime|c04dba1e-8720-4811-8b2b-d35ea25b7b79]  File "/Users/hamelsmu/anaconda3/lib/python3.8/site-packages/metaflow/task.py", line 426, in run_step
+[MFLOG|0|2021-07-23T17:16:32.131064Z|runtime|d89dc987-1d74-4122-b4fb-b8d3d1a89448]    self._exec_step_function(step_func, input_obj)
+[MFLOG|0|2021-07-23T17:16:32.131134Z|runtime|6e88435a-80a2-4db7-ac1d-0a6659b1daab]  File "/Users/hamelsmu/anaconda3/lib/python3.8/site-packages/metaflow/task.py", line 53, in _exec_step_function
+[MFLOG|0|2021-07-23T17:16:32.131204Z|runtime|ae2e886c-bf15-4f7f-b946-b43acd5986e6]    step_function(input_obj)
+[MFLOG|0|2021-07-23T17:16:32.131271Z|runtime|e9c6df86-7a05-413f-aec4-ac150389d0fa]  File "counter_branch.py", line 29, in join
+[MFLOG|0|2021-07-23T17:16:32.131341Z|runtime|f6b18f0c-6ca4-4aca-98b2-af95612eba43]    print("the count thing", self.count)
+[MFLOG|0|2021-07-23T17:16:32.131409Z|runtime|05bb876a-a481-406c-9f9e-0f369a994778]  File "/Users/hamelsmu/anaconda3/lib/python3.8/site-packages/metaflow/flowspec.py", line 129, in __getattr__
+[MFLOG|0|2021-07-23T17:16:32.131478Z|runtime|23b9eb05-c5ed-4b5b-88c1-055506286e47]    raise AttributeError("Flow %s has no attribute '%s'" %
+[MFLOG|0|2021-07-23T17:16:32.131547Z|runtime|8c4080ed-d5eb-48a4-819d-0b8e8a188532]AttributeError: Flow CounterBranchFlow has no attribute 'count'
+[MFLOG|0|2021-07-23T17:16:32.131615Z|runtime|35948416-089f-44fc-a286-0ba0a9d6bf77]
+[MFLOG|0|2021-07-23T17:16:32.132204Z|runtime|32dcfce3-71b4-4b3e-bdb8-a5805f5b4c5d]Task failed.

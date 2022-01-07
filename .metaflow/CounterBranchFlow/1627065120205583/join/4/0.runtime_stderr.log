@@ -1,0 +1,7 @@
+[MFLOG|0|2021-07-23T18:32:02.542116Z|runtime|f4021b9a-e9aa-46aa-8224-791f644d1b49]<flow CounterBranchFlow step join> failed:
+[MFLOG|0|2021-07-23T18:32:02.549024Z|runtime|341a9f9c-a71d-44a2-bc7d-5c5d02af59c6]    Unhandled artifacts in merge:
+[MFLOG|0|2021-07-23T18:32:02.549252Z|runtime|e9835318-aed4-4898-8de1-c2ae4f66aa0c]    Step join cannot merge the following artifacts due to them having conflicting values:
+[MFLOG|0|2021-07-23T18:32:02.593179Z|runtime|ae3ec67d-6902-48ee-b4e6-4c14c2ac4a12]    [creature].
+[MFLOG|0|2021-07-23T18:32:02.593413Z|runtime|45c85c90-9d56-4804-83f7-b1b8da9d32a1]    To remedy this issue, be sure to explictly set those artifacts (using self.<artifact_name> = ...) prior to calling merge_artifacts.
+[MFLOG|0|2021-07-23T18:32:02.593503Z|runtime|a049adb6-dbe3-4f47-9942-530a049d0c6b]
+[MFLOG|0|2021-07-23T18:32:02.594349Z|runtime|b6bd39f7-556b-40d1-bccf-838d0fe1a7ae]Task failed.

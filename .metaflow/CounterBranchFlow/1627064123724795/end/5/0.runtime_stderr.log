@@ -1,0 +1,30 @@
+[MFLOG|0|2021-07-23T18:15:26.907950Z|runtime|d0c78b12-df33-41fe-ae20-7bebcdee8785]<flow CounterBranchFlow step end> failed:
+[MFLOG|0|2021-07-23T18:15:26.914240Z|runtime|a5019a71-160f-4564-9fb4-8334a9846b28]    Internal error
+[MFLOG|0|2021-07-23T18:15:26.916995Z|runtime|8e57f858-0256-445d-82a2-7d16accf0aa7]Traceback (most recent call last):
+[MFLOG|0|2021-07-23T18:15:26.917130Z|runtime|235d6300-2240-4f6d-b123-a4f005177fd6]  File "/Users/hamelsmu/anaconda3/lib/python3.8/site-packages/metaflow/cli.py", line 1005, in main
+[MFLOG|0|2021-07-23T18:15:26.917221Z|runtime|fe50ef7e-eb4a-4f54-b7eb-1edebac11361]    start(auto_envvar_prefix='METAFLOW', obj=state)
+[MFLOG|0|2021-07-23T18:15:26.917303Z|runtime|a756460f-f7fc-4642-87a1-c77f7d1356e7]  File "/Users/hamelsmu/anaconda3/lib/python3.8/site-packages/click/core.py", line 829, in __call__
+[MFLOG|0|2021-07-23T18:15:26.917381Z|runtime|2d9bc39e-98a2-433a-89c4-9753cf9e1ce3]    return self.main(args, kwargs)
+[MFLOG|0|2021-07-23T18:15:26.917457Z|runtime|d9d3a825-1d6a-4ed8-aa48-4314c8fdd232]  File "/Users/hamelsmu/anaconda3/lib/python3.8/site-packages/click/core.py", line 782, in main
+[MFLOG|0|2021-07-23T18:15:26.917538Z|runtime|904e87e8-b549-4d48-abbb-2a81d4794ead]    rv = self.invoke(ctx)
+[MFLOG|0|2021-07-23T18:15:26.917611Z|runtime|0df6e861-7cf3-49cc-8950-260faa40af2a]  File "/Users/hamelsmu/anaconda3/lib/python3.8/site-packages/click/core.py", line 1259, in invoke
+[MFLOG|0|2021-07-23T18:15:26.917688Z|runtime|cf57d129-c8a9-46f8-8598-106bc52b4526]    return _process_result(sub_ctx.command.invoke(sub_ctx))
+[MFLOG|0|2021-07-23T18:15:26.917761Z|runtime|23002c21-2af5-431a-8723-cd7c16813a7b]  File "/Users/hamelsmu/anaconda3/lib/python3.8/site-packages/click/core.py", line 1066, in invoke
+[MFLOG|0|2021-07-23T18:15:26.917838Z|runtime|4bf6ac00-a42d-4b69-b891-eecf971fa625]    return ctx.invoke(self.callback, ctx.params)
+[MFLOG|0|2021-07-23T18:15:26.963514Z|runtime|2ed45b02-239c-47de-9930-af0dec40f784]  File "/Users/hamelsmu/anaconda3/lib/python3.8/site-packages/click/core.py", line 610, in invoke
+[MFLOG|0|2021-07-23T18:15:26.963744Z|runtime|acad14e4-eaf5-46e9-931a-0410b0217a62]    return callback(args, kwargs)
+[MFLOG|0|2021-07-23T18:15:26.963826Z|runtime|e542a354-be26-4dfa-a559-40372a509cfd]  File "/Users/hamelsmu/anaconda3/lib/python3.8/site-packages/click/decorators.py", line 21, in new_func
+[MFLOG|0|2021-07-23T18:15:26.963898Z|runtime|b5bec6a1-6a06-47c2-b591-a1adbef92a89]    return f(get_current_context(), args, kwargs)
+[MFLOG|0|2021-07-23T18:15:26.963968Z|runtime|ecc432cc-13aa-4336-bba1-82336eff04d4]  File "/Users/hamelsmu/anaconda3/lib/python3.8/site-packages/metaflow/cli.py", line 514, in step
+[MFLOG|0|2021-07-23T18:15:26.964035Z|runtime|a88185cf-f1f5-42bc-b934-3ed394b10a2f]    task.run_step(step_name,
+[MFLOG|0|2021-07-23T18:15:26.964101Z|runtime|c62ab3f2-7b88-4737-be2a-b4705f577c14]  File "/Users/hamelsmu/anaconda3/lib/python3.8/site-packages/metaflow/task.py", line 443, in run_step
+[MFLOG|0|2021-07-23T18:15:26.964166Z|runtime|57ddde69-432b-46d7-aa65-1f0d207fbd4f]    self._exec_step_function(step_func)
+[MFLOG|0|2021-07-23T18:15:26.964232Z|runtime|94f55d40-028f-4132-af15-9ad1352f8cef]  File "/Users/hamelsmu/anaconda3/lib/python3.8/site-packages/metaflow/task.py", line 51, in _exec_step_function
+[MFLOG|0|2021-07-23T18:15:26.964299Z|runtime|9d74e352-4dcb-4dd6-bd7c-0b287663222d]    step_function()
+[MFLOG|0|2021-07-23T18:15:26.964367Z|runtime|d8033417-0396-43d9-b90d-bd2f42ffdc23]  File "counter_branch.py", line 46, in end
+[MFLOG|0|2021-07-23T18:15:26.964435Z|runtime|e7d6437d-8ea3-4af2-8bbc-968163962ffa]    print("The creature is", self.creature)
+[MFLOG|0|2021-07-23T18:15:26.964500Z|runtime|2b50378e-3b8d-4d75-8baf-75c91cd8d6a4]  File "/Users/hamelsmu/anaconda3/lib/python3.8/site-packages/metaflow/flowspec.py", line 129, in __getattr__
+[MFLOG|0|2021-07-23T18:15:26.964566Z|runtime|0bc713ba-09eb-48de-9aba-a4cc57873229]    raise AttributeError("Flow %s has no attribute '%s'" %
+[MFLOG|0|2021-07-23T18:15:26.964634Z|runtime|db86d173-0221-41bb-beab-b5e34f49f433]AttributeError: Flow CounterBranchFlow has no attribute 'creature'
+[MFLOG|0|2021-07-23T18:15:26.964700Z|runtime|8322b6d7-039d-4008-838b-b6dcc9d28473]
+[MFLOG|0|2021-07-23T18:15:26.965304Z|runtime|1b64d9c7-094b-4584-8beb-43a07a7d2e5a]Task failed.

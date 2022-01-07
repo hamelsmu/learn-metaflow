@@ -1,0 +1,3 @@
+[MFLOG|0|2021-07-19T03:31:38.354657Z|runtime|afe7dc62-b9f8-43b7-ba92-b997343dbd97]seal is a string of 4 characters
+[MFLOG|0|2021-07-19T03:31:38.354931Z|runtime|f2906d05-6bba-4ff0-9503-4fd93e2bd516]Count is an integer: 10+1=11
+[MFLOG|0|2021-07-19T03:31:38.406163Z|runtime|d58c7313-a39a-4c3b-bc35-9897a726a797]Ratio is a <class 'NoneType'> whose value is None

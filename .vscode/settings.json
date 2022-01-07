@@ -1,0 +1,4 @@
+{
+    "python.analysis.memory.keepLibraryAst": true,
+    "jupyter.sendSelectionToInteractiveWindow": true
+}

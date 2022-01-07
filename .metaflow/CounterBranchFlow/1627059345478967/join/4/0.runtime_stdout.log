@@ -1,0 +1,3 @@
+[MFLOG|0|2021-07-23T16:55:47.911976Z|runtime|e0e3d8e0-f73f-43e1-b18c-d0b400c82be6]count from add_one 1
+[MFLOG|0|2021-07-23T16:55:47.961186Z|runtime|eb2bee97-fc29-4a73-b9f0-b889c95ab63f]count from add_two 2
+[MFLOG|0|2021-07-23T16:55:47.961424Z|runtime|4ef66cf2-8b4b-461e-adaf-39fe53783c04]the count thing 2

@@ -1,0 +1,1 @@
+{"flow_id": "CounterBranchFlow", "run_number": "1626673627994171", "step_name": "join", "task_id": "4", "field_name": "ds-root", "type": "ds-root", "value": "/Users/hamelsmu/github/learn-metaflow/.metaflow", "tags": [], "user_name": "hamelsmu", "ts_epoch": 1626673630321}

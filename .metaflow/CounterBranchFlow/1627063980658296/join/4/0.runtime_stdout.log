@@ -1,0 +1,4 @@
+[MFLOG|0|2021-07-23T18:13:09.568682Z|runtime|f06fe3c1-5805-420d-878a-9fc639467114]count from add_one 1
+[MFLOG|0|2021-07-23T18:13:09.623121Z|runtime|89bc2c49-288e-473e-8fd7-f9aaf706d512]count from add_two 2
+[MFLOG|0|2021-07-23T18:13:09.623279Z|runtime|62a298e2-26b2-4109-8612-bde43897b2ac]the count thing 2
+[MFLOG|0|2021-07-23T18:13:09.623362Z|runtime|cda3cbf0-3bc7-4888-9771-f92b00fab1de]total-time: 8.1788969039917

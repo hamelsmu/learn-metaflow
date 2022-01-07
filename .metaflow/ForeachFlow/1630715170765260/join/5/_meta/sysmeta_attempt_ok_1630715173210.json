@@ -1,0 +1,1 @@
+{"flow_id": "ForeachFlow", "run_number": "1630715170765260", "step_name": "join", "task_id": "5", "field_name": "attempt_ok", "type": "internal_attempt_status", "value": "True", "tags": ["attempt_id:0"], "user_name": "hamelsmu", "ts_epoch": 1630715173210}

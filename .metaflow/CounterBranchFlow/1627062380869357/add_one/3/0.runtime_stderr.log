@@ -1,0 +1,28 @@
+[MFLOG|0|2021-07-23T17:46:24.642463Z|runtime|332c9e55-9b9c-4d25-aa05-ea6c6b2ca4d3]<flow CounterBranchFlow step add_one> failed:
+[MFLOG|0|2021-07-23T17:46:24.652674Z|runtime|25b9a7bc-1bc1-472d-9bfc-4780def55d87]    Internal error
+[MFLOG|0|2021-07-23T17:46:24.654674Z|runtime|5ab80900-727a-4db6-877e-db3273ddb655]Traceback (most recent call last):
+[MFLOG|0|2021-07-23T17:46:24.654981Z|runtime|dabe5b8e-4922-4960-ba8c-cc8f48cada63]  File "/Users/hamelsmu/anaconda3/lib/python3.8/site-packages/metaflow/cli.py", line 1005, in main
+[MFLOG|0|2021-07-23T17:46:24.655103Z|runtime|96f848d1-abf5-4961-b565-c9569536cadc]    start(auto_envvar_prefix='METAFLOW', obj=state)
+[MFLOG|0|2021-07-23T17:46:24.655219Z|runtime|fbf500db-6411-4d90-85af-0974054825d1]  File "/Users/hamelsmu/anaconda3/lib/python3.8/site-packages/click/core.py", line 829, in __call__
+[MFLOG|0|2021-07-23T17:46:24.655326Z|runtime|62f83a68-46a5-4c52-84f3-39da2d31d830]    return self.main(args, kwargs)
+[MFLOG|0|2021-07-23T17:46:24.655426Z|runtime|b49fd79f-c009-427c-98cc-560f3a85668e]  File "/Users/hamelsmu/anaconda3/lib/python3.8/site-packages/click/core.py", line 782, in main
+[MFLOG|0|2021-07-23T17:46:24.655526Z|runtime|32102751-703b-488b-ac61-93b529dac912]    rv = self.invoke(ctx)
+[MFLOG|0|2021-07-23T17:46:24.655644Z|runtime|c157d986-7271-4e53-927c-823dec903886]  File "/Users/hamelsmu/anaconda3/lib/python3.8/site-packages/click/core.py", line 1259, in invoke
+[MFLOG|0|2021-07-23T17:46:24.655786Z|runtime|075e0cfa-4b17-40c7-b1fe-ba34b5f973a7]    return _process_result(sub_ctx.command.invoke(sub_ctx))
+[MFLOG|0|2021-07-23T17:46:24.656052Z|runtime|fa4d4b34-b50a-4773-a311-a1932deb6c5b]  File "/Users/hamelsmu/anaconda3/lib/python3.8/site-packages/click/core.py", line 1066, in invoke
+[MFLOG|0|2021-07-23T17:46:24.656247Z|runtime|827266ae-9535-4dad-8750-5c35453b3352]    return ctx.invoke(self.callback, ctx.params)
+[MFLOG|0|2021-07-23T17:46:24.722824Z|runtime|95689763-6358-4cf7-9557-a23c0a79f372]  File "/Users/hamelsmu/anaconda3/lib/python3.8/site-packages/click/core.py", line 610, in invoke
+[MFLOG|0|2021-07-23T17:46:24.723000Z|runtime|fc7ec6bf-fcd8-4c77-9b21-ac055fc0ca6f]    return callback(args, kwargs)
+[MFLOG|0|2021-07-23T17:46:24.723105Z|runtime|8a25b0eb-1aee-4813-a243-cc986c2931e4]  File "/Users/hamelsmu/anaconda3/lib/python3.8/site-packages/click/decorators.py", line 21, in new_func
+[MFLOG|0|2021-07-23T17:46:24.723197Z|runtime|95e4b7bd-e5f2-4c12-bf05-e70afb3b01b7]    return f(get_current_context(), args, kwargs)
+[MFLOG|0|2021-07-23T17:46:24.723287Z|runtime|ba513b79-e49b-4904-a3e8-90ca09dccb4d]  File "/Users/hamelsmu/anaconda3/lib/python3.8/site-packages/metaflow/cli.py", line 514, in step
+[MFLOG|0|2021-07-23T17:46:24.723374Z|runtime|4a28a05f-2ef5-45dd-abd0-b83cbbfac9db]    task.run_step(step_name,
+[MFLOG|0|2021-07-23T17:46:24.723459Z|runtime|adeb62aa-e272-4b6f-bcce-3b9546626874]  File "/Users/hamelsmu/anaconda3/lib/python3.8/site-packages/metaflow/task.py", line 443, in run_step
+[MFLOG|0|2021-07-23T17:46:24.723542Z|runtime|9b479f07-1410-4419-8e6c-5d8d1d807298]    self._exec_step_function(step_func)
+[MFLOG|0|2021-07-23T17:46:24.723624Z|runtime|f2a952bc-8b0f-4ba8-86a0-f2bc9b976290]  File "/Users/hamelsmu/anaconda3/lib/python3.8/site-packages/metaflow/task.py", line 51, in _exec_step_function
+[MFLOG|0|2021-07-23T17:46:24.723708Z|runtime|99abb05f-faf5-49ba-9745-3477b89f8c3b]    step_function()
+[MFLOG|0|2021-07-23T17:46:24.723792Z|runtime|4c252fa1-8984-4b48-90c3-43040e0a9a4f]  File "counter_branch.py", line 17, in add_one
+[MFLOG|0|2021-07-23T17:46:24.723877Z|runtime|48a81617-e76e-4533-9643-8f60e1a6df0d]    print("total-time:", t1-t0)
+[MFLOG|0|2021-07-23T17:46:24.723962Z|runtime|896bb8b8-993b-4711-9107-87b3e6022f1a]NameError: name 't1' is not defined
+[MFLOG|0|2021-07-23T17:46:24.724047Z|runtime|3481a137-4215-4828-a2f3-acfb92eadeec]
+[MFLOG|0|2021-07-23T17:46:24.724536Z|runtime|315a8bac-23ff-403b-890b-97d1c231c34a]Task failed.

@@ -1,0 +1,3 @@
+[MFLOG|0|2021-07-19T02:38:38.083982Z|runtime|2d62aee7-10ff-4128-a787-d97fd48805c5]hamel is a string of 5 characters
+[MFLOG|0|2021-07-19T02:38:38.084295Z|runtime|b234ab95-20c8-49d7-bc97-4a65955b05fe]Count is an integer: 1+1=2
+[MFLOG|0|2021-07-19T02:38:38.139449Z|runtime|437e4130-ce80-4103-b3f4-fa8cbe224e2a]Ratio is a <class 'NoneType'> whose value is None
